@@ -42,6 +42,16 @@
 \setbeamertemplate{itemize items}[circle]
 \setbeamertemplate{enumerate items}[numbered]
 
+\usepackage{natbib}
+\setbeamertemplate{frametitle continuation}[from second]
+\setbeamercolor*{bibliography entry title}{fg=black}
+\setbeamercolor*{bibliography entry author}{fg=black}
+\setbeamercolor*{bibliography entry location}{fg=black}
+\setbeamercolor*{bibliography entry note}{fg=black}
+\setbeamertemplate{bibliography item}{}
+
+\setbeamertemplate{footline}[frame number]
+
 \newenvironment{xplainframe}{\bgroup\setbeamertemplate{background}{}\begin{frame}[plain]}{\end{frame}\egroup}
 
 \setbeamertemplate{background}{

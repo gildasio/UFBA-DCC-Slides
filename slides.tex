@@ -4,6 +4,7 @@
 \usepackage{lipsum, lmodern}
 \usepackage{csquotes}
 \usepackage{xcolor}
+\usepackage[portuguese]{babel}
 \usetheme{DCC}
 \graphicspath{{imgs/}}
 
@@ -13,8 +14,12 @@
 \date{\today}
 
 \begin{document}
-\frame{\maketitle}
-\begin{frame}{Agenda}
+
+\begin{frame}[plain,noframenumbering]
+    \titlepage
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]{Agenda}
 	\tableofcontents
 \end{frame}
 
@@ -71,14 +76,14 @@
 \section{Referências}
 \nocite{*}
 
-\begin{frame}{Referências}
+\begin{frame}[plain,noframenumbering]{Referências}
     As referências são colocadas no formato bibtex no arquivo refs.bib.
 
     A opção nocite foi colocada para inserir todas referências do arquivo. Caso
     queira exibir somente as citadas, pode remover essa linha.
 \end{frame}
 
-\begin{frame}[allowframebreaks]
+\begin{frame}[plain,noframenumbering,allowframebreaks]
         \frametitle{Referências}
         \bibliographystyle{plain}
         \bibliography{refs}
